@@ -1,0 +1,116 @@
+
+/* General styling */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 30px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.gallery {
+    display: grid;
+    gap: 20px;
+    padding: 30px;
+}
+
+.photo img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.photo p {
+    font-size: 13px;
+}
+
+footer {
+    padding: 30px;
+    font-size: 12px;
+}
+
+
+/* BREAKPOINT 1: Under 600px */
+
+@media (max-width: 599px) {
+
+    body {
+        background-color: #e3d6ce;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .photo img {
+        height: 220px;
+    }
+}
+
+
+/* BREAKPOINT 2: 600px to 1200px */
+
+@media (min-width: 600px) and (max-width: 1200px) {
+
+    body {
+        background-color: #dce4dd;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* BREAKPOINT 3: Over 1200px */
+
+@media (min-width: 1201px) {
+
+    body {
+        background-color: #f2e9d9;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    header p {
+        font-size: 22px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .photo1 {
+        grid-column: span 2;
+    }
+
+    .photo1 img {
+        height: 400px;
+    }
+}
